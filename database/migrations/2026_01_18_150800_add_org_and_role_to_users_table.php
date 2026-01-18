@@ -11,9 +11,15 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('organization_id')->nullable()->constrained()->onDelete('set null');
-            $table->string('role')->default('employee'); // admin, doctor, employee, super_admin
-            $table->string('avatar_path')->nullable();
+            if (!Schema::hasColumn('users', 'organization_id')) {
+                $table->foreignId('organization_id')->nullable()->constrained()->onDelete('set null');
+            }
+            if (!Schema::hasColumn('users', 'role')) {
+                $table->string('role')->default('employee'); // admin, doctor, employee, super_admin
+            }
+            if (!Schema::hasColumn('users', 'avatar_path')) {
+                $table->string('avatar_path')->nullable();
+            }
         });
     }
 
