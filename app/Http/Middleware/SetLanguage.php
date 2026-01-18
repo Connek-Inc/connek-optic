@@ -17,8 +17,12 @@ class SetLanguage
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Session::has('locale')) {
-            App::setLocale(Session::get('locale'));
+        if (session()->has('locale')) {
+            $locale = session()->get('locale');
+            if (in_array($locale, ['en', 'es', 'fr'])) {
+                app()->setLocale($locale);
+                \Carbon\Carbon::setLocale($locale);
+            }
         }
 
         return $next($request);
