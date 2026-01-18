@@ -7,7 +7,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
                 </path>
             </svg>
-            {{ __('Back') }}
+            {{ __('Atrás') }}
         </button>
 
         <div class="flex items-center space-x-2">
@@ -20,7 +20,7 @@
 
                     <div
                         class="relative flex items-center justify-center w-8 h-8 rounded-full font-bold text-xs transition-colors duration-300
-                                                        {{ $i < $currentStep ? 'bg-green-500 text-white' : ($i == $currentStep ? 'bg-brand-primary text-white shadow-lg shadow-brand-light/50' : 'bg-slate-100 text-slate-400 dark:bg-slate-700 dark:text-slate-500') }}">
+                                                            {{ $i < $currentStep ? 'bg-green-500 text-white' : ($i == $currentStep ? 'bg-brand-primary text-white shadow-lg shadow-brand-light/50' : 'bg-slate-100 text-slate-400 dark:bg-slate-700 dark:text-slate-500') }}">
                         @if($i < $currentStep)
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -42,7 +42,7 @@
             <div
                 class="bg-brand-primary/5 dark:bg-brand-primary/10 border border-brand-primary/20 rounded-full px-6 py-2 inline-flex items-center">
                 <div class="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-                <span class="text-xs font-bold uppercase tracking-wider text-brand-primary mr-2">{{ __('Client:') }}</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-primary mr-2">{{ __('Cliente:') }}</span>
                 <span class="font-bold text-slate-900 dark:text-cream">{{ $name }}</span>
             </div>
         </div>
@@ -58,8 +58,9 @@
                             d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                     </svg>
                 </div>
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-cream mb-2">{{ __('New Client Information') }}</h2>
-                <p class="text-slate-500 dark:text-slate-400">{{ __('Please enter the client details to begin.') }}</p>
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-cream mb-2">{{ __('Información del Nuevo Cliente') }}
+                </h2>
+                <p class="text-slate-500 dark:text-slate-400">{{ __('Por favor ingrese los detalles para comenzar.') }}</p>
             </div>
 
             <div
@@ -72,7 +73,7 @@
                     <div class="space-y-6">
                         <div>
                             <label
-                                class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{{ __('Full Name') }}
+                                class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{{ __('Nombre Completo') }}
                                 <span class="text-red-500">*</span></label>
                             <div class="relative group">
                                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -91,7 +92,7 @@
 
                         <div>
                             <label
-                                class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{{ __('Phone Number') }}</label>
+                                class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{{ __('Teléfono') }}</label>
                             <div class="relative group">
                                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                     <svg class="h-5 w-5 text-slate-400 group-focus-within:text-brand-primary transition-colors"
@@ -109,7 +110,7 @@
 
                         <div>
                             <label
-                                class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{{ __('Email Address') }}</label>
+                                class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{{ __('Correo Electrónico') }}</label>
                             <div class="relative group">
                                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                     <svg class="h-5 w-5 text-slate-400 group-focus-within:text-brand-primary transition-colors"
@@ -131,16 +132,16 @@
                         class="flex flex-col justify-center items-centerspace-y-6 pt-6 md:pt-0 md:pl-8 md:border-l border-slate-100 dark:border-neutral-800">
                         <!-- Info / Upsell -->
                         <div class="bg-brand-primary/5 rounded-2xl p-6 text-center">
-                            <h4 class="font-bold text-brand-primary mb-2">{{ __('Quick Tip') }}</h4>
+                            <h4 class="font-bold text-brand-primary mb-2">{{ __('Consejo Rápido') }}</h4>
                             <p class="text-sm text-slate-600 dark:text-slate-400">
-                                {{ __('Collecting accurate contact info now allows for seamless invoicing and warranty management later.') }}
+                                {{ __('Recopilar datos precisos facilita la facturación y garantías.') }}
                             </p>
                         </div>
 
                         <div class="w-full mt-auto">
                             <button wire:click="nextStep"
                                 class="w-full bg-brand-primary text-white py-4 rounded-xl font-bold shadow-lg shadow-brand-primary/30 hover:bg-brand-light transform hover:scale-[1.02] transition-all flex items-center justify-center group">
-                                <span>{{ __('Next Step') }}</span>
+                                <span>{{ __('Siguiente Paso') }}</span>
                                 <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -158,7 +159,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>
-                        {{ __('Already a client? Search Database') }}
+                        {{ __('¿Ya es cliente? Buscar en Base de Datos') }}
                     </a>
                 </div>
             </div>
@@ -168,9 +169,9 @@
 
     @if ($currentStep === 2)
         <div class="text-center max-w-5xl mx-auto animate-fade-in">
-            <h2 class="text-2xl font-bold text-slate-900 dark:text-cream mb-2">{{ __('What is the client looking for?') }}
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-cream mb-2">{{ __('¿Qué está buscando el cliente?') }}
             </h2>
-            <p class="text-slate-500 dark:text-slate-400 mb-8">{{ __('Select main category') }}</p>
+            <p class="text-slate-500 dark:text-slate-400 mb-8">{{ __('Seleccione la categoría principal') }}</p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                 <!-- Row 1: The Basics -->
@@ -185,8 +186,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Single Vision') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Distance or Reading') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Visión Sencilla') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Distancia o Lectura') }}</p>
                 </button>
                 <button wire:click="selectClientType('progressif')"
                     class="bg-white dark:bg-neutral-900 p-6 rounded-2xl border-2 border-slate-100 dark:border-neutral-800 hover:border-brand-primary hover:shadow-lg transition-all active:scale-95 text-center group">
@@ -197,8 +198,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Progressives') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('All distances') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Progresivos') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Todas las distancias') }}</p>
                 </button>
                 <button wire:click="selectClientType('bifocal')"
                     class="bg-white dark:bg-neutral-900 p-6 rounded-2xl border-2 border-slate-100 dark:border-neutral-800 hover:border-brand-primary hover:shadow-lg transition-all active:scale-95 text-center group">
@@ -209,8 +210,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Bifocals') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Visible segment') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Bifocales') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Segmento visible') }}</p>
                 </button>
 
                 <!-- Row 2: Specialized -->
@@ -223,8 +224,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Occupational') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Office / PC') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Ocupacional') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Oficina / PC') }}</p>
                 </button>
                 <button wire:click="selectClientType('antifatigue')"
                     class="bg-white dark:bg-neutral-900 p-6 rounded-2xl border-2 border-slate-100 dark:border-neutral-800 hover:border-brand-primary hover:shadow-lg transition-all active:scale-95 text-center group">
@@ -234,8 +235,8 @@
                                 d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Anti-Fatigue') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Visual rest') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Anti-Fatiga') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Descanso Visual') }}</p>
                 </button>
                 <button wire:click="selectClientType('kids')"
                     class="bg-white dark:bg-neutral-900 p-6 rounded-2xl border-2 border-slate-100 dark:border-neutral-800 hover:border-brand-primary hover:shadow-lg transition-all active:scale-95 text-center group">
@@ -246,8 +247,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Kids') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Myopia Control') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Niños') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Control de Miopía') }}</p>
                 </button>
 
                 <!-- Row 3: Other -->
@@ -260,8 +261,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Sunglasses') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('With/Without prescription') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Gafas de Sol') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Con/Sin prescripción') }}</p>
                 </button>
                 <button wire:click="selectClientType('contact_lens')"
                     class="bg-white dark:bg-neutral-900 p-6 rounded-2xl border-2 border-slate-100 dark:border-neutral-800 hover:border-brand-primary hover:shadow-lg transition-all active:scale-95 text-center group">
@@ -274,8 +275,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Contact Lenses') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Fitting or Sale') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Lentes de Contacto') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Adaptación o Venta') }}</p>
                 </button>
                 <button wire:click="selectClientType('frame_only')"
                     class="bg-white dark:bg-neutral-900 p-6 rounded-2xl border-2 border-slate-100 dark:border-neutral-800 hover:border-brand-primary hover:shadow-lg transition-all active:scale-95 text-center group">
@@ -288,8 +289,8 @@
                                 d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Service / Repair') }}</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Frame only') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Servicio / Reparación') }}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{{ __('Solo Montura') }}</p>
                 </button>
             </div>
         </div>
@@ -298,7 +299,7 @@
     <!-- Step 3: Promotion (Dynamic) -->
     @if ($currentStep === 3)
         <div class="text-center max-w-4xl mx-auto animate-fade-in">
-            <h2 class="text-2xl font-bold text-slate-900 dark:text-cream mb-4">{{ __('Promotion of the day') }}</h2>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-cream mb-4">{{ __('Promoción del día') }}</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                 @php
                     // Simple filter: if progressive, show all or prioritize progressive.
@@ -347,8 +348,8 @@
                         class="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:animate-shine">
                     </div>
 
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('No Promo') }}</h3>
-                    <p class="text-slate-400 text-sm mt-2">{{ __('Standard Price') }}</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Sin Promo') }}</h3>
+                    <p class="text-slate-400 text-sm mt-2">{{ __('Precio Estándar') }}</p>
                 </button>
             </div>
         </div>
@@ -375,14 +376,14 @@
                                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Upload Photo') }}</h3>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Subir Foto') }}</h3>
                             <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
-                                {{ __('Analyze photo or enter manually') }}
+                                {{ __('Analizar foto o ingresar manualmente') }}
                             </p>
 
                             @if($photo)
                                 <span
-                                    class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-2">{{ __('Analyzing...') }}</span>
+                                    class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-2">{{ __('Analizando...') }}</span>
                             @endif
                         </button>
                     </div>
@@ -397,8 +398,8 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Manual Entry') }}</h3>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">{{ __('Enter sphere, cylinder...') }}</p>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-cream">{{ __('Entrada Manual') }}</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">{{ __('Ingresar esfera, cilindro...') }}</p>
                     </button>
 
                     <!-- Reserve Without Exam -->
@@ -412,9 +413,9 @@
                         </div>
                         <h3
                             class="text-lg font-bold text-slate-900 dark:text-cream group-hover:text-amber-500 transition-colors">
-                            {{ __('Reserve / Skip') }}
+                            {{ __('Reservar / Saltar') }}
                         </h3>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">{{ __('I will provide prescription later') }}
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">{{ __('Proveeré la prescripción luego') }}
                         </p>
                     </button>
                 </div>
@@ -470,7 +471,7 @@
                             class="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200">Cancelar</button>
                         <button wire:click="processManualPrescription"
                             class="bg-brand-primary text-white px-8 py-3 rounded-lg shadow hover:bg-brand-light font-medium transition-colors">
-                            @if($analyzing) {{ __('Analyzing...') }} @else {{ __('Analyze and Continue') }} @endif
+                            @if($analyzing) {{ __('Analizando...') }} @else {{ __('Analizar y Continuar') }} @endif
                         </button>
                     </div>
                 </div>
@@ -586,7 +587,7 @@
                         @foreach($dbLensIndexes as $idx)
                             <button wire:click="selectIndex('{{ $idx->name }}')"
                                 class="flex-shrink-0 w-20 h-24 rounded-lg border-2 flex flex-col items-center justify-center transition-all backdrop-blur-sm
-                                                                                                {{ $lensA_index === $idx->name ? 'border-brand-primary bg-white/80 dark:bg-neutral-800/80 ring-2 ring-brand-light' : 'border-slate-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 opacity-60' }}">
+                                                                                                        {{ $lensA_index === $idx->name ? 'border-brand-primary bg-white/80 dark:bg-neutral-800/80 ring-2 ring-brand-light' : 'border-slate-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 opacity-60' }}">
                                 <span class="font-bold text-lg text-slate-800 dark:text-cream">{{ $idx->name }}</span>
                                 @if($idx->price > 0) <span
                                     class="text-[10px] text-brand-primary dark:text-brand-light">+${{ $idx->price }}</span>
@@ -681,7 +682,7 @@
     @if ($currentStep === 9)
         <div class="text-center max-w-4xl mx-auto animate-fade-in pb-20">
             <h2 class="text-3xl font-bold text-slate-900 dark:text-cream mb-2">Resumen del Expediente</h2>
-            <p class="text-slate-500 dark:text-slate-400 mb-8">{{ __('Verify and confirm') }}</p>
+            <p class="text-slate-500 dark:text-slate-400 mb-8">{{ __('Verificar y confirmar') }}</p>
 
             <div
                 class="bg-white/70 dark:bg-neutral-900/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-slate-100/50 dark:border-neutral-800/50 overflow-hidden text-left">
@@ -690,18 +691,19 @@
                 <div
                     class="p-8 border-b border-slate-100 dark:border-neutral-800 bg-brand-primary/5 dark:bg-brand-primary/10">
                     <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">
-                        {{ __('Client Information') }}</h3>
+                        {{ __('Información del Cliente') }}
+                    </h3>
                     <div class="flex flex-col md:flex-row gap-8">
                         <div>
-                            <span class="block text-xs text-slate-400 uppercase">{{ __('Name') }}</span>
+                            <span class="block text-xs text-slate-400 uppercase">{{ __('Nombre') }}</span>
                             <span class="text-lg font-bold text-slate-900 dark:text-cream">{{ $name }}</span>
                         </div>
                         <div>
-                            <span class="block text-xs text-slate-400 uppercase">{{ __('Email') }}</span>
+                            <span class="block text-xs text-slate-400 uppercase">{{ __('Correo') }}</span>
                             <span class="text-lg font-bold text-slate-900 dark:text-cream">{{ $email ?: '-' }}</span>
                         </div>
                         <div>
-                            <span class="block text-xs text-slate-400 uppercase">{{ __('Phone') }}</span>
+                            <span class="block text-xs text-slate-400 uppercase">{{ __('Teléfono') }}</span>
                             <span class="text-lg font-bold text-slate-900 dark:text-cream">{{ $phone ?: '-' }}</span>
                         </div>
                     </div>
@@ -709,7 +711,7 @@
 
                 <!-- 1. Client & Prescription -->
                 <div class="p-8 border-b border-slate-100 dark:border-neutral-800">
-                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">{{ __('Prescription') }}</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">{{ __('Prescripción') }}</h3>
 
                     @if($prescriptionType === 'pending')
                         <div
@@ -720,9 +722,11 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
-                                <h4 class="font-bold text-lg text-amber-800 dark:text-amber-400">{{ __('Pending Exam') }}</h4>
+                                <h4 class="font-bold text-lg text-amber-800 dark:text-amber-400">{{ __('Examen Pendiente') }}
+                                </h4>
                                 <p class="text-sm text-amber-600 dark:text-amber-500">
-                                    {{ __('Client will provide prescription later.') }}</p>
+                                    {{ __('El cliente proveerá la prescripción luego.') }}
+                                </p>
                             </div>
                         </div>
                     @else
@@ -734,22 +738,26 @@
                                     <div>
                                         <div class="text-xs text-slate-400">SPH</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['sph_od'] ?? '-' }}</div>
+                                            {{ $prescriptionData['sph_od'] ?? '-' }}
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="text-xs text-slate-400">CYL</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['cyl_od'] ?? '-' }}</div>
+                                            {{ $prescriptionData['cyl_od'] ?? '-' }}
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="text-xs text-slate-400">AXE</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['axis_od'] ?? '-' }}</div>
+                                            {{ $prescriptionData['axis_od'] ?? '-' }}
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="text-xs text-slate-400">ADD</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['add_od'] ?? '-' }}</div>
+                                            {{ $prescriptionData['add_od'] ?? '-' }}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -760,22 +768,26 @@
                                     <div>
                                         <div class="text-xs text-slate-400">SPH</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['sph_og'] ?? '-' }}</div>
+                                            {{ $prescriptionData['sph_og'] ?? '-' }}
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="text-xs text-slate-400">CYL</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['cyl_og'] ?? '-' }}</div>
+                                            {{ $prescriptionData['cyl_og'] ?? '-' }}
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="text-xs text-slate-400">AXE</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['axis_og'] ?? '-' }}</div>
+                                            {{ $prescriptionData['axis_og'] ?? '-' }}
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="text-xs text-slate-400">ADD</div>
                                         <div class="font-bold text-slate-800 dark:text-white">
-                                            {{ $prescriptionData['add_og'] ?? '-' }}</div>
+                                            {{ $prescriptionData['add_og'] ?? '-' }}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -785,7 +797,7 @@
 
                 <!-- 2. Product Details -->
                 <div class="p-8 border-b border-slate-100 dark:border-neutral-800">
-                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">{{ __('Sales Summary') }}
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">{{ __('Resumen de Venta') }}
                     </h3>
                     <div class="flex flex-col md:flex-row gap-6">
                         <!-- Promotion -->
@@ -800,9 +812,11 @@
                             </div>
                             <div>
                                 <div class="font-bold text-lg text-slate-900 dark:text-cream">
-                                    {{ $selectedPromotion ? $selectedPromotion->name : 'Sin Promo' }}</div>
+                                    {{ $selectedPromotion ? $selectedPromotion->name : 'Sin Promo' }}
+                                </div>
                                 <div class="text-slate-500 text-sm">
-                                    {{ $selectedPromotion ? $selectedPromotion->description : '' }}</div>
+                                    {{ $selectedPromotion ? $selectedPromotion->description : '' }}
+                                </div>
                             </div>
                         </div>
 

@@ -132,8 +132,8 @@
                             </path>
                         </svg></div>
                     <span
-                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">New
-                        Wizard</span>
+                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">Nuevo
+                        Cliente</span>
                 </a>
             </nav>
 
@@ -166,7 +166,7 @@
                         <button @click="darkMode = !darkMode"
                             class="flex-1 flex items-center justify-center p-2 rounded-xl bg-slate-100/50 dark:bg-neutral-800/50 text-slate-600 dark:text-slate-400 hover:bg-brand-primary hover:text-white transition-all group/theme border border-slate-200/50 dark:border-neutral-700/50">
                             <span class="text-xs font-medium mr-2 hidden lg:block lg:group-hover:block"
-                                x-text="darkMode ? 'Light' : 'Dark'">Theme</span>
+                                x-text="darkMode ? 'Light' : 'Dark'">Tema</span>
                             <svg x-show="!darkMode" class="w-4 h-4" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -183,7 +183,7 @@
 
                         <a href="{{ route('logout') }}"
                             class="flex-1 flex items-center justify-center p-2 rounded-xl bg-red-50 dark:bg-red-900/10 text-red-500 hover:bg-red-500 hover:text-white transition-all border border-red-100 dark:border-red-900/20">
-                            <span class="text-xs font-medium mr-2 hidden lg:block lg:group-hover:block">Logout</span>
+                            <span class="text-xs font-medium mr-2 hidden lg:block lg:group-hover:block">Salir</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
