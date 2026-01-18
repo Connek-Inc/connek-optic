@@ -116,5 +116,21 @@
     "Name": "Nombre",
     "Email": "Correo",
     "Phone": "Teléfono",
-    "Verify and confirm": "Verificar y confirmar"
+    "Verify and confirm": "Verificar y confirmar",
+    "Dashboard": "Inicio",
+    "Inventory": "Inventario",
+    "Materials": "Materiales",
+    "Promotions": "Promociones",
+    "Clients": "Clientes",
+    "New Client Wizard": "Nuevo Cliente",
+    "Theme": "Tema",
+    "Light": "Claro",
+    "Dark": "Oscuro",
+    "Logout": "Cerrar Sesión",
+    "Clients Today": "Clientes de Hoy",
+    "In Progress": "En Progreso",
+    "Cart Ready": "Por Pagar",
+    "Completed": "Completados",
+    "Today's Clients": "Clientes del Día",
+    "No details yet": "Sin detalles aún"
 }

@@ -81,7 +81,7 @@
                                 d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
                         </svg></div>
                     <span
-                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Inventario') }}</span>
+                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Inventory') }}</span>
                 </a>
 
                 <!-- Materials -->
@@ -94,7 +94,7 @@
                             </path>
                         </svg></div>
                     <span
-                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Materiales') }}</span>
+                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Materials') }}</span>
                 </a>
 
                 <!-- Promos -->
@@ -107,7 +107,7 @@
                             </path>
                         </svg></div>
                     <span
-                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Promociones') }}</span>
+                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Promotions') }}</span>
                 </a>
 
                 <!-- Clients -->
@@ -120,7 +120,7 @@
                             </path>
                         </svg></div>
                     <span
-                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Clientes') }}</span>
+                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('Clients') }}</span>
                 </a>
 
                 <!-- New Wizard -->
@@ -132,7 +132,7 @@
                             </path>
                         </svg></div>
                     <span
-                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('New Wizard') }}</span>
+                        class="ml-3 whitespace-nowrap transition-all duration-300 opacity-100 lg:opacity-0 lg:group-hover:opacity-100">{{ __('New Client Wizard') }}</span>
                 </a>
             </nav>
 

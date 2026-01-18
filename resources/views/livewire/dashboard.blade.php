@@ -35,7 +35,7 @@
             </div>
             <div>
                 <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['clients_today'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Clients aujourd'hui</p>
+                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('Clients Today') }}</p>
             </div>
         </div>
 
@@ -50,7 +50,7 @@
             </div>
             <div>
                 <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['in_progress'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">En cours</p>
+                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('In Progress') }}</p>
             </div>
         </div>
 
@@ -66,7 +66,7 @@
             </div>
             <div>
                 <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['cart_ready'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Panier prêt</p>
+                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('Cart Ready') }}</p>
             </div>
         </div>
 
@@ -81,14 +81,14 @@
             </div>
             <div>
                 <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['completed'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">Complétés</p>
+                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('Completed') }}</p>
             </div>
         </div>
     </div>
 
     <!-- Clients List -->
     <div class="flex justify-between items-center mb-6">
-        <h2 class="text-lg font-bold text-slate-800 dark:text-brand-light">Clients du jour</h2>
+        <h2 class="text-lg font-bold text-slate-800 dark:text-brand-light">{{ __('Today\'s Clients') }}</h2>
         <span class="text-sm text-slate-500 dark:text-slate-400 capitalize">{{ $date }}</span>
     </div>
 
@@ -132,7 +132,7 @@
                     </div>
                 @else
                     <div class="flex-1"></div>
-                    <p class="text-sm text-slate-400 italic">No details yet</p>
+                    <p class="text-sm text-slate-400 italic">{{ __('No details yet') }}</p>
                 @endif
             </div>
         @endforeach
