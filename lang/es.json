@@ -119,6 +119,7 @@
     "Verify and confirm": "Verificar y confirmar",
     "Dashboard": "Inicio",
     "Inventory": "Inventario",
+    "Categories": "Categorías",
     "Materials": "Materiales",
     "Promotions": "Promociones",
     "Clients": "Clientes",
@@ -132,5 +133,15 @@
     "Cart Ready": "Por Pagar",
     "Completed": "Completados",
     "Today's Clients": "Clientes del Día",
-    "No details yet": "Sin detalles aún"
+    "No details yet": "Sin detalles aún",
+    "Manage your product categories": "Administra tus categorías de producto",
+    "Search": "Buscar",
+    "New Category": "Nueva Categoría",
+    "Edit Category": "Editar Categoría",
+    "Products": "Productos",
+    "Edit": "Editar",
+    "Are you sure you want to delete this category?": "¿Estás seguro de eliminar esta categoría?",
+    "No categories found.": "No se encontraron categorías.",
+    "Create your first category": "Crea tu primera categoría",
+    "Save": "Guardar"
 }

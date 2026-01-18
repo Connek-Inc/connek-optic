@@ -27,6 +27,7 @@ Route::get('/logout', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
     Route::get('/inventario', ProductList::class)->name('inventario');
+    Route::get('/categorias', App\Livewire\CategoryList::class)->name('categorias');
     Route::get('/materiales', MaterialList::class)->name('materiales');
     Route::get('/clientes', ClientList::class)->name('clientes');
     Route::get('/clientes/{client}', ClientDetail::class)->name('clientes.show');

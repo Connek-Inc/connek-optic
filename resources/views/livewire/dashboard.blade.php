@@ -21,43 +21,43 @@
         <!-- Button removed -->
     </div>
 
-    <!-- KPI Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+    <!-- KPI Cards (Responsive: Mobile Grid 2x2, Desktop Row 4x1) -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-10">
         <!-- Clients Today -->
         <div
-            class="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-neutral-800 flex items-center transition-transform hover:scale-105 duration-200">
-            <div class="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl text-blue-600 dark:text-blue-400 mr-4">
+            class="bg-white dark:bg-neutral-900 p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-slate-100 dark:border-neutral-800 flex flex-col md:flex-row items-center justify-center md:justify-start text-center md:text-left aspect-square md:aspect-auto transition-transform hover:scale-105 duration-200 group">
+            <div class="p-3 md:p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl md:rounded-xl text-blue-600 dark:text-blue-400 mb-2 md:mb-0 md:mr-4 group-hover:scale-110 transition-transform">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                     </path>
                 </svg>
             </div>
             <div>
-                <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['clients_today'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('Clients Today') }}</p>
+                <p class="text-3xl md:text-3xl font-bold text-slate-900 dark:text-cream mb-1">{{ $stats['clients_today'] }}</p>
+                <p class="text-[10px] md:text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wide">{{ __('Clients Today') }}</p>
             </div>
         </div>
 
         <!-- In Progress -->
         <div
-            class="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-neutral-800 flex items-center transition-transform hover:scale-105 duration-200">
-            <div class="p-3 bg-orange-50 dark:bg-orange-900/30 rounded-xl text-orange-500 dark:text-orange-400 mr-4">
+            class="bg-white dark:bg-neutral-900 p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-slate-100 dark:border-neutral-800 flex flex-col md:flex-row items-center justify-center md:justify-start text-center md:text-left aspect-square md:aspect-auto transition-transform hover:scale-105 duration-200 group">
+            <div class="p-3 md:p-3 bg-orange-50 dark:bg-orange-900/30 rounded-xl md:rounded-xl text-orange-500 dark:text-orange-400 mb-2 md:mb-0 md:mr-4 group-hover:scale-110 transition-transform">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
             </div>
             <div>
-                <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['in_progress'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('In Progress') }}</p>
+                <p class="text-3xl md:text-3xl font-bold text-slate-900 dark:text-cream mb-1">{{ $stats['in_progress'] }}</p>
+                <p class="text-[10px] md:text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wide">{{ __('In Progress') }}</p>
             </div>
         </div>
 
-        <!-- Ready -->
+        <!-- Cart Ready -->
         <div
-            class="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-neutral-800 flex items-center transition-transform hover:scale-105 duration-200">
-            <div class="p-3 bg-teal-50 dark:bg-teal-900/30 rounded-xl text-teal-600 dark:text-teal-400 mr-4">
+            class="bg-white dark:bg-neutral-900 p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-slate-100 dark:border-neutral-800 flex flex-col md:flex-row items-center justify-center md:justify-start text-center md:text-left aspect-square md:aspect-auto transition-transform hover:scale-105 duration-200 group">
+            <div class="p-3 md:p-3 bg-teal-50 dark:bg-teal-900/30 rounded-xl md:rounded-xl text-teal-600 dark:text-teal-400 mb-2 md:mb-0 md:mr-4 group-hover:scale-110 transition-transform">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
@@ -65,23 +65,23 @@
                 </svg>
             </div>
             <div>
-                <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['cart_ready'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('Cart Ready') }}</p>
+                <p class="text-3xl md:text-3xl font-bold text-slate-900 dark:text-cream mb-1">{{ $stats['cart_ready'] }}</p>
+                <p class="text-[10px] md:text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wide">{{ __('Cart Ready') }}</p>
             </div>
         </div>
 
         <!-- Completed -->
         <div
-            class="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-neutral-800 flex items-center transition-transform hover:scale-105 duration-200">
-            <div class="p-3 bg-green-50 dark:bg-green-900/30 rounded-xl text-green-600 dark:text-green-400 mr-4">
+            class="bg-white dark:bg-neutral-900 p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-sm border border-slate-100 dark:border-neutral-800 flex flex-col md:flex-row items-center justify-center md:justify-start text-center md:text-left aspect-square md:aspect-auto transition-transform hover:scale-105 duration-200 group">
+            <div class="p-3 md:p-3 bg-green-50 dark:bg-green-900/30 rounded-xl md:rounded-xl text-green-600 dark:text-green-400 mb-2 md:mb-0 md:mr-4 group-hover:scale-110 transition-transform">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
             </div>
             <div>
-                <p class="text-3xl font-bold text-slate-900 dark:text-cream">{{ $stats['completed'] }}</p>
-                <p class="text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('Completed') }}</p>
+                <p class="text-3xl md:text-3xl font-bold text-slate-900 dark:text-cream mb-1">{{ $stats['completed'] }}</p>
+                <p class="text-[10px] md:text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wide">{{ __('Completed') }}</p>
             </div>
         </div>
     </div>
