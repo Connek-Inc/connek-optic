@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-cream: #EFECE3;
+    --color-brand-light: #8FABD4;
+    --color-brand-primary: #4A70A9;
+    --color-brand-black: #000000;
+
+    /* Semantic Colors that flip in Dark Mode if using CSS vars, 
+       but here we define the palette for utility usage */
+}
+
+/* Base Styles for seamless Dark Mode */
+:root {
+    --bg-main: #EFECE3;
+    --bg-card: #ffffff;
+    --text-main: #4A70A9;
+}
+
+.dark {
+    --bg-main: #0a0a0a;
+    /* Neutral 950 */
+    --bg-card: #171717;
+    /* Neutral 900 */
+    --text-main: #EFECE3;
+    /* Cream text in dark mode */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hide Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
